@@ -1,0 +1,10 @@
+
+venv/
+.env
+
+# Cache
+__pycache__/
+*.pyc
+
+# History
+agent_history.json
