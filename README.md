@@ -1,167 +1,214 @@
-#  Open Deep Research Agent
+# Open Deep Research Agent
 
-An **Agentic AI-powered Research Automation System**  
-
+An Agentic AI-Powered Research Automation System
 
 ---
 
-##  Project Overview
+## Project Overview
 
-**Open Deep Research Agent** is an intelligent research assistant that automates **topic-based** and **paper-based** research using a **multi-agent AI architecture**.
+Open Deep Research Agent is an intelligent research assistant that automates topic-based and paper-based research using a multi-agent AI architecture.
 
 The system accepts:
-- Any **research topic**, or  
-- Any **academic paper / URL**
+
+* Any research topic
+* Any academic paper or URL
 
 and generates:
--  **Concise summaries**
--  **Detailed, structured research reports**
 
-This project demonstrates the **practical application of Agentic AI concepts** in real-world research automation.
+* Concise summaries
+* Detailed structured research reports
+* Research insights
+* Academic-style content
+
+This project demonstrates the practical application of Agentic AI concepts in real-world research automation.
 
 ---
 
 ## Objective
 
-- Automate manual research workflows  
-- Convert unstructured inputs into structured knowledge  
-- Apply **multi-agent coordination** for intelligent decision-making  
-- Build a scalable AI system with a clean UI
+* Automate manual research workflows
+* Convert unstructured inputs into structured knowledge
+* Apply multi-agent coordination for intelligent decision-making
+* Build a scalable AI system with a clean user interface
 
 ---
 
 ## Problem Statement
 
 Manual research is often:
-- Time-consuming  
-- Unstructured  
-- Difficult to scale  
 
-Researchers and students spend excessive time collecting, organizing, and summarizing information.
+* Time-consuming
+* Unstructured
+* Difficult to scale
 
-### Solution
-This project solves the problem by using **specialized AI agents**, where each agent handles a specific responsibility such as planning, searching, and writing.
+Researchers and students spend excessive time collecting, organizing, and summarizing information from multiple sources.
+
+---
+
+## Solution
+
+This project solves the problem by using specialized AI agents where each agent performs a specific responsibility such as planning, searching, and report generation.
 
 ---
 
 ## Software & Hardware Dependencies
 
-###  Software Dependencies
-- **Python** 3.9+
-- **Streamlit** (UI Framework)
-- **OpenAI / OpenRouter API** (LLM)
-- **Tavily API** (Web Search)
-- **dotenv** (Environment variables)
-- **JSON** (Memory & history storage)
+### Software Dependencies
+
+* Python 3.9+
+* Streamlit
+* Gemini API
+* Tavily Search API
+* LangChain
+* LangGraph
+* Python-dotenv
+* PyPDF
+* Pillow
+* JSON
 
 ### Hardware Dependencies
-- Minimum **4 GB RAM**
-- No GPU required
-- Stable internet connection
+
+* Minimum 4 GB RAM
+* No GPU required
+* Stable Internet Connection
 
 ---
 
 ## System Architecture
 
-<img width="632" height="620" alt="TASK_3_System_architecture" src="https://github.com/user-attachments/assets/e806e71a-b181-4829-903e-5039cd9c7a9d" />
+---
 
 ## Workflow Explanation
 
-1. User enters a **topic or research paper URL**
-2. Planner Agent identifies:
-   - Input type (topic / paper)
-   - Research structure
-3. Searcher Agent gathers relevant information from the web
-4. Writer Agent:
-   - Summarizes OR
-   - Generates a detailed research report
-5. Output is displayed in the UI and saved for future reference
+1. User enters a research topic.
+2. User may optionally upload:
+
+   * PDF documents
+   * Images
+3. Planner Agent creates a research plan.
+4. Searcher Agent gathers information using Tavily Search.
+5. Writer Agent generates structured reports.
+6. Final report is displayed and stored in history.
 
 ---
 
-##  Agent Roles
+## Agent Roles
 
-###  Planner Agent
-- Determines research intent
-- Designs the structure of the report
-- Coordinates agent flow
+### Planner Agent
 
-###  Searcher Agent
-- Fetches relevant web content
-- Uses Tavily API for real-time search
-- Filters noisy data
+* Determines research intent
+* Creates research strategy
+* Coordinates workflow
+
+### Searcher Agent
+
+* Searches relevant web content
+* Retrieves research sources
+* Filters irrelevant information
 
 ### Writer Agent
-- Generates human-readable content
-- Produces structured, academic-style output
-- Ensures clarity and correctness
+
+* Generates research reports
+* Produces summaries
+* Creates structured academic-style content
+
+---
+
+## Current Features
+
+### Research Features
+
+* General Web Research
+* Academic Research
+* Multi-Agent Workflow
+* Research History
+* Chat-Based Interface
+
+### Document Processing
+
+* PDF Upload
+* PDF Text Extraction
+* PDF Context Integration
+
+### Image Processing
+
+* Image Upload
+* Image Understanding
+* Research Context Enhancement
+
+### AI Capabilities
+
+* Gemini AI Integration
+* Tavily Search Integration
+* LangGraph Workflow
+* LangChain Agents
+
+---
 
 ## Output Types
 
 The system can generate:
 
-Short summaries
+* Short Summaries
+* Detailed Research Reports
+* Academic Content
+* Structured Explanations
+* Research Insights
 
-Detailed research reports
+---
 
-Paper summaries from URLs
+## Sample Screenshots
 
-Structured academic-style content
-
-Clean readable explanations
-
-
-### 2. Sample Screenshots
-
- ### Dashboard
- 
-<img width="1919" height="883" alt="image" src="https://github.com/user-attachments/assets/1320472c-29e1-418a-8cdb-5b6991f71d51" />
+### Dashboard
 
 ### Generated Academic Report
 
-<img width="1905" height="867" alt="image" src="https://github.com/user-attachments/assets/f2e25c64-7b6f-4ef7-8a80-c606a0279971" />
-
 ### Academic Papers
-<img width="1918" height="843" alt="image" src="https://github.com/user-attachments/assets/c1e7486f-a452-4002-b2d8-da1fcdd44024" />
-<img width="1913" height="694" alt="image" src="https://github.com/user-attachments/assets/6791bad5-0d66-4abe-97c9-bc9269b6b6b1" />
-<img width="1566" height="321" alt="image" src="https://github.com/user-attachments/assets/85035866-d16e-4143-be44-16e20d2a7fca" />
+
+---
 
 ## Limitations
 
-- Depends on third-party APIs
-- Very large topics may be token-limited
-- Offline usage not supported
-- Citation accuracy depends on source quality
+* Depends on third-party APIs
+* Large topics may be token-limited
+* Offline mode not supported
+* Citation quality depends on source quality
 
+---
 
-##  Future Enhancements
+## Future Enhancements
 
-- PDF / DOCX export
-- Dark / Light mode toggle
-- Multi-chat thread support (ChatGPT-style)
-- Database-backed memory (MongoDB)
-- Automatic citation formatting (APA / IEEE)
-- User authentication
+* PDF Export
+* DOCX Export
+* Citation Generation (APA, IEEE, MLA)
+* Knowledge Graph Visualization
+* RAG-Based PDF Chat
+* Semantic Scholar Integration
+* ArXiv Integration
+* User Authentication
+* Research Quality Scoring
 
-##  Conclusion
-Open Deep Researcher successfully demonstrates how AI agents can automate and simplify the research process.
-By combining planning, searching, and writing agents, the system is able to understand user queries, fetch relevant information, and generate meaningful summaries or detailed reports.
+---
+
+## Conclusion
+
+Open Deep Research Agent demonstrates how AI agents can automate and simplify research workflows.
+
+By combining planning, searching, and writing agents, the system can understand user queries, collect relevant information, and generate meaningful reports with minimal manual effort.
 
 This project helped in:
 
-Understanding agent-based AI architecture
+* Understanding Agentic AI Architecture
+* Applying LLMs in Real-World Applications
+* Building End-to-End AI Systems
+* Developing Practical AI Engineering Skills
 
-Applying LLMs in real-world research tasks
-
-Building an end-to-end AI-powered web application
-
-Improving problem-solving and practical AI development skills
-
-Overall, this project proves that AI can be effectively used to save time, reduce manual effort, and enhance research productivity, making it highly useful for students, researchers, and professionals.
+---
 
 ## Live Project Deployment
 
-🔗 **Streamlit App:**  
+Streamlit App:
+
 https://ankitkumar72767-open-deep-researcher-app-zyg9xh.streamlit.app/
 
 ---
@@ -169,7 +216,7 @@ https://ankitkumar72767-open-deep-researcher-app-zyg9xh.streamlit.app/
 ## Local Setup Instructions
 
 ```bash
-git clone https://github.com/ankitkumar72767/open-deep-researcher.git
+git clone https://github.com/Gauravmandal2006/open-deep-researcher.git
 cd open-deep-researcher
 
 python -m venv venv
@@ -177,8 +224,50 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 streamlit run app.py
-Developer Details
+```
+
+---
+
+## Original Developer
+
 Ankit Kumar
 B.Tech – Computer Science (AI & ML)
+
+GitHub: https://github.com/ankitkumar72767
+
+Original Repository: https://github.com/ankitkumar72767/open-deep-researcher
+
+---
+
+## Customized & Enhanced By
+
+Gaurav Mandal
+B.Tech – Computer Science & Engineering (CSE)
+Guru Ghasidas Vishwavidyalaya (GGV)
+
+GitHub: https://github.com/Gauravmandal2006
+
+### Contributions of Ankit Kumar and Gaurav Mandal
+
+* PDF Upload & Analysis
+* Image Upload & Understanding
+* Gemini AI Integration
+* Streamlit UI Enhancements
+* Multi-Agent Workflow Improvements
+* Testing and Deployment
+
+---
+
+## Project Maintainer
+
+This repository is currently maintained and enhanced by Gaurav Mandal.
+
+---
+
+## Acknowledgement
+
+This project is based on the original Open Deep Research Agent developed by Ankit Kumar (https://github.com/ankitkumar72767/open-deep-researcher) and has been further customized and enhanced with additional features and improvements.
+
+
 
 
